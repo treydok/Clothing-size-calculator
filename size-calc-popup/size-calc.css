@@ -154,22 +154,4 @@ button{
 
 
 
-nav {
-    background-color:rgb(114, 156, 204);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-nav ul li a, .explore {
-    color: #fff;
-    text-decoration: none;
-    font-family:Arial;
-}
+
