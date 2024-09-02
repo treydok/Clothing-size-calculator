@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Size Estimator</title>
+
+       <link rel="stylesheet" href="size-calc-popup/size-calc.css">
+
+    </head>
+
+    <body>
+
+
+        <nav>
+            <ul>
+                <li><a href="blog.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <p>Cant find your size?</p>
+       <button onclick="openPopup();" class="openPop">
+    <span class="find-size-button">Find My Size</span>
+    </button>
+
+       <p class="idealSize"></p>
+       
+      
+        <div class="overlay" id="overlay">
+            
+                <div class="popup" id="page1">
+
+                    <button class="x-button" onclick="closePopup();">X</button>
+ 
+                    <h1 class="find-size-head">  Find your Size</h1>
+                    
+                    <p>Gender:
+                        <select id="gender" class="select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </p>
+
+                    
+
+                    <label for="height-slider">Select your height:</label>
+                    <input type="range" id="height-slider" class="slider" min="145" max="222" step="1" value="170">
+                    <div id="output">Height: 170 cm</div>
+                    
+                    <label for="weight-slider">Select your weight:</label>
+                    <input type="range" id="weight-slider" class="slider" min="90" max="300" step="1" value="150">
+                    <div id="output-weight">Weight: 150 lbs</div>
+                    
+                
+
+                    <p>Belly Size: 
+                        <button class="row1" onclick="setBellySize(30); selected1(this); "><img src="images/belly1.png"> flat </button>
+
+                        <button  class="row12 " onclick="setBellySize(35); selected1(this); "><img src="images/belly2.png"> average </button>
+
+                        <button class="row13" onclick="setBellySize(40); selected1(this);"><img src="images/belly3.png"> round </button>
+                    </p>
+
+                    <p>Chest Size: <button class="row2" onclick="setChestSize(35);selected2(this)"><img src="images/chest1.png"> slim</button>
+
+                        <button class="row22" onclick="setChestSize(39); selected2(this)"><img src="images/chest2.png"> average </button>
+
+                        <button class="row23" onclick="setChestSize(42); selected2(this)"><img src="images/chest3.png"> broad </button>
+                    </p>
+
+                    <p>Fit Preference:
+                        <select id="fitPreference" class="select">
+                            <option value="tight">Tight</option>
+                            <option value="regular">Regular</option>
+                            <option value="loose">Loose</option>
+                        </select>
+                    </p>
+
+                    <p>Usual Size:
+                        <select id="usualSize" class="select">
+                            <option value="xsmall">X-Small</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">X-Large</option>
+                        </select>
+                    </p>
+                    <button class="submit popup-button" onclick="submitForm()">Submit</button>
+                   
+                    
+                </div>
+                <div class="popup" id="page2" style="display: none;">
+                    <button class="x-button" onclick="closePopup();">X</button>
+                    <p>
+                        
+                        <h1 class="final"></h1>
+        
+                        <p class="perc1"></p>
+                        <p class="perc2"></p>
+                        <button class="popup-button" onclick="retake();">redo</button>
+                    </p>
+                </div>
+        </div>
+
+        <script src="size-calc-popup/size-calc.js" ></script>
+
+    </body>
+ </html>

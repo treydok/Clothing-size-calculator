@@ -1,0 +1,175 @@
+body{
+    background-color: white;
+}
+
+button{
+
+    padding:10px;
+    border-radius:5px;
+    background-color:black;
+    color:white;
+    cursor: pointer;
+   
+}
+
+.popup-button{
+    border:none;
+    transition: background-color .6s;
+}
+
+.popup-button:hover{
+    background-color: rgb(100, 100, 100) ;
+}
+
+
+.openPop{
+    background-color:transparent;
+    border:none;
+    padding:0;
+    outline:none;
+    color:black;
+}
+
+.find-size-button{
+    text-decoration:underline;
+    font-size:medium;
+    transition: color .5s, font-size .2s; 
+    font-weight:bold;
+   
+}
+
+.find-size-button:hover {
+    color: rgb(190, 12, 12);
+    font-size:18px;
+}
+
+
+
+.isrow1{
+   border-color:black;
+            color:black;
+        border:3px;
+}
+
+.isrow2{
+    border-color:black;
+            color:black;
+            border:3px;
+}
+
+.popup{
+    text-align: center;
+    width:400px;
+    height:500px;
+    background-color:white;
+    padding:20px;
+    margin: 0 auto;
+    margin-top:50px;
+    border-radius:50px;
+    border: 2px solid black;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.x-button{
+    top:120px;
+    right:870px;
+    position:absolute;
+    margin-left:-350px;
+    background-color:transparent;
+    color:black;
+    margin-right: 20px;
+    
+    border:none;
+    font-family:monospace;
+    font-size:30px;
+    
+
+}
+
+.page2{
+    text-align: center;
+    width:400px;
+    height:500px;
+    background-color:white;
+    padding:20px;
+    margin: 0 auto;
+    margin-top:50px;
+    border-radius:50px;
+    border: 2px solid black;
+    font-size: 100;
+    
+}
+
+.row1 img,
+.row12 img,
+.row13 img,
+.row2 img,
+.row22 img,
+.row23 img
+ {
+    height: 35px; 
+    width: 35px;
+    margin-right: 5px; 
+    border-radius:20;
+}
+
+.row1 ,
+.row12 ,
+.row13 ,
+.row2 ,
+.row22,
+.row23 {
+    background-color:white;
+    border-radius:0;
+    color: black;
+    border-color:white;
+
+}
+
+.select{
+    width: 100px; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    font-size: 16px; 
+    color: #333; 
+    cursor: pointer;
+}
+
+
+
+nav {
+    background-color:rgb(114, 156, 204);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a, .explore {
+    color: #fff;
+    text-decoration: none;
+    font-family:Arial;
+}
